@@ -1,0 +1,54 @@
+/* ==============================
+   FOODLOOP CASE STUDY
+================================ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter', sans-serif;
+    background:#ffffff;
+    color:#111;
+}
+
+
+.case-section{
+
+    width:100%;
+    margin:0;
+    padding: 0;
+}
+
+
+.case-section h2{
+
+    font-size:32px;
+    margin-bottom:30px;
+    font-family:'Sora', sans-serif;
+
+}
+
+
+.case-section img{
+
+    width:100%;
+    height:auto;
+    display:block;
+
+}
+
+.prototype-btn{
+
+    display:inline-block;
+    margin-top:20px;
+    padding:14px 30px;
+    background:#1f7a4d;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+
+}

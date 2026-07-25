@@ -1,0 +1,650 @@
+/* =======================================
+   RESPONSIVE DESIGN
+======================================= */
+
+
+/* ================= TABLET ================= */
+
+@media(max-width:1024px){
+
+    section{
+        padding:80px 6%;
+    }
+
+
+    h1{
+        font-size:48px;
+    }
+
+
+    h2{
+        font-size:36px;
+    }
+
+
+
+    /* HERO */
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        gap:50px;
+    }
+
+
+    .hero-left,
+    .hero-right{
+        width:100%;
+    }
+
+
+    .hero-text{
+        margin:auto;
+    }
+
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+
+
+    /* PROFILE */
+
+    .profile-card{
+        width:350px;
+    }
+
+
+
+    /* STATS */
+
+    .stats{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+
+
+    /* PROJECT */
+
+    .project-card{
+        flex-direction:column;
+    }
+
+
+    .project-image,
+    .project-content{
+        width:100%;
+    }
+
+
+
+    /* SKILLS */
+
+    .skills-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+
+
+    /* TIMELINE */
+
+    .timeline{
+        flex-wrap:wrap;
+    }
+
+
+
+}
+
+
+
+/* ================= MOBILE ================= */
+
+
+@media(max-width:768px){
+
+
+body{
+    overflow-x:hidden;
+}
+
+
+
+section{
+    padding:70px 5%;
+}
+
+
+
+h1{
+    font-size:36px;
+}
+
+
+h2{
+    font-size:30px;
+}
+
+
+p{
+    font-size:15px;
+}
+
+
+
+/* ================= NAVBAR ================= */
+
+
+.navbar{
+
+    width:90%;
+    top:15px;
+
+    padding:15px 20px;
+
+    flex-direction:row;
+
+}
+
+
+
+.logo a{
+
+    font-size:26px;
+
+}
+
+
+
+/* hamburger */
+
+.menu-toggle{
+
+    display:block;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+}
+
+
+
+/* hide desktop button */
+
+.navbar .btn{
+
+    display:none;
+
+}
+
+
+
+/* mobile menu */
+
+
+.nav-links{
+
+    display:none;
+
+    position:absolute;
+
+    top:75px;
+
+    left:0;
+
+    width:100%;
+
+    padding:25px;
+
+    background:white;
+
+    border-radius:20px;
+
+    flex-direction:column;
+
+    gap:20px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+}
+
+
+
+.nav-links.active{
+
+    display:flex;
+
+}
+
+
+
+
+
+/* ================= HERO ================= */
+
+
+.hero{
+
+    min-height:auto;
+
+    padding-top:130px;
+
+    flex-direction:column-reverse;
+
+    text-align:center;
+
+    gap:40px;
+
+}
+
+
+
+.hero-left,
+.hero-right{
+
+    width:100%;
+
+}
+
+
+
+.hero h1{
+
+    max-width:100%;
+
+}
+
+
+
+.hero-text{
+
+    font-size:16px;
+
+}
+
+
+
+.hero-buttons{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+
+
+.hero-buttons a{
+
+    width:220px;
+
+}
+
+
+
+.profile-wrapper{
+
+    transform:scale(.9);
+
+}
+
+
+
+.profile-card{
+
+    width:100%;
+
+    max-width:320px;
+
+    padding:25px;
+
+}
+
+
+
+.profile-card img{
+
+    width:170px;
+
+    height:170px;
+
+}
+
+
+
+.badge{
+
+    display:none;
+
+}
+
+
+
+
+
+/* ================= STATS ================= */
+
+
+.stats{
+
+    grid-template-columns:1fr;
+
+    padding:0 5%;
+
+    margin:50px auto;
+
+}
+
+
+
+.stat-card{
+
+    padding:30px;
+
+}
+
+
+
+.stat-card h2{
+
+    font-size:40px;
+
+}
+
+
+
+
+
+/* ================= ABOUT ================= */
+
+
+.about-card{
+
+    padding:25px;
+
+}
+
+
+
+.about-content p{
+
+    font-size:16px;
+
+}
+
+
+
+.about-tags{
+
+    justify-content:center;
+
+}
+
+
+
+.about-tags span{
+
+    font-size:14px;
+
+}
+
+
+
+
+
+/* ================= PROJECT ================= */
+
+
+.project-card{
+
+    padding:25px;
+
+    gap:30px;
+
+}
+
+
+
+.project-content h3{
+
+    font-size:32px;
+
+}
+
+
+
+.project-links{
+
+    flex-direction:column;
+
+}
+
+
+
+.project-btn,
+.secondary-btn{
+
+    width:100%;
+
+}
+
+
+
+
+
+/* ================= SKILLS ================= */
+
+
+.skills-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.skill-card{
+
+    padding:30px;
+
+}
+
+
+
+.skill-card i{
+
+    font-size:50px;
+
+}
+
+
+
+
+
+/* ================= DESIGN PROCESS ================= */
+
+
+.timeline{
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+
+
+.timeline-item{
+
+    width:100%;
+
+}
+
+
+
+.line{
+
+    display:none;
+
+}
+
+
+
+
+
+/* ================= JOURNEY ================= */
+
+
+.journey-timeline::before{
+
+    left:20px;
+
+}
+
+
+
+.journey-item{
+
+    width:100%;
+
+    left:0!important;
+
+    padding-left:60px;
+
+    padding-right:0;
+
+    text-align:left!important;
+
+}
+
+
+
+.journey-item::after{
+
+    left:11px!important;
+
+}
+
+
+
+
+
+/* ================= CONTACT ================= */
+
+
+.contact-card{
+
+    padding:40px 25px;
+
+}
+
+
+
+.contact-card h2{
+
+    font-size:28px;
+
+}
+
+
+
+.contact-buttons{
+
+    gap:15px;
+
+}
+
+
+
+
+
+/* ================= FOOTER ================= */
+
+
+footer{
+
+    padding:30px 15px;
+
+}
+
+
+.social-links{
+
+    gap:15px;
+
+}
+
+
+}
+
+
+
+/* ================= SMALL MOBILE ================= */
+
+
+@media(max-width:480px){
+
+
+h1{
+
+    font-size:30px;
+
+}
+
+
+h2{
+
+    font-size:26px;
+
+}
+
+
+
+.hero-text{
+
+    font-size:15px;
+
+}
+
+
+
+.profile-card{
+
+    max-width:280px;
+
+}
+
+
+
+.profile-card img{
+
+    width:150px;
+
+    height:150px;
+
+}
+
+
+
+.primary-btn,
+.secondary-btn{
+
+    width:100%;
+
+}
+
+
+
+.contact-icon{
+
+    width:50px;
+
+    height:50px;
+
+}
+
+
+
+}
